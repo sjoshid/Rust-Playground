@@ -1,0 +1,7 @@
+[package]
+name = "temperature_conversion"
+version = "0.1.0"
+authors = ["Sugs <joshi.sujit020386@gmail.com>"]
+
+[dependencies]
+decimal = "2.0.4"
