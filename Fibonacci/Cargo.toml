@@ -1,6 +1,6 @@
 [package]
 name = "Fibonacci"
 version = "0.1.0"
-authors = ["joshi.sujit020386@gmail.com <ILGitHub2>"]
+authors = ["joshi.sujit020386@gmail.com"]
 
 [dependencies]
