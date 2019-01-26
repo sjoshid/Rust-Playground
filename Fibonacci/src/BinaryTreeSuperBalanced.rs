@@ -8,7 +8,6 @@ struct BinaryTreeNode {
     value: usize,
     left_child: Option<Box<BinaryTreeNode>>,
     right_child: Option<Box<BinaryTreeNode>>,
-    type_of_node: BinaryTreeNodeType,
 }
 
 fn is_binary_tree_super_node(node: &Box<BinaryTreeNode>, mut depth: usize) {
@@ -26,13 +25,29 @@ fn is_binary_tree_super_node(node: &Box<BinaryTreeNode>, mut depth: usize) {
     }
 
     if left_empty && right_empty {
-
+        println!("value is {}", node.value);
     }
 }
 
-fn buildTree() {
-    /*let left_child = BinaryTreeNode {
+pub fn build_tree() {
+    let c2 = BinaryTreeNode {
+        value: 2,
+        left_child: None,
+        right_child: None,
+    };
+
+    let c3 = BinaryTreeNode {
+        value: 3,
+        left_child: None,
+        right_child: None,
+    };
+
+    let c1 = Box::new(BinaryTreeNode {
         value: 1,
-        left_child: Box::new(),
-    }*/
+        left_child: Some(Box::new(c2)),
+        right_child: Some(Box::new(c3)),
+    });
+
+    is_binary_tree_super_node(&c1, 0);
+
 }

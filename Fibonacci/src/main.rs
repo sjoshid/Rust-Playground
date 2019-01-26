@@ -1,9 +1,14 @@
 static FINAL_NUMBER:u32 = 10;
+mod BinaryTreeSuperBalanced;
+
+use BinaryTreeSuperBalanced::build_tree;
 
 fn main() {
-	fibonacciRecurse(0, 1, 0);
+	/*fibonacciRecurse(0, 1, 0);
     println!("Fibonacci loop");
-    fibonacciLoop(0, 1, 0);
+    fibonacciLoop(0, 1, 0);*/
+
+    build_tree();
 }
 
 fn fibonacciRecurse(first: u32, second: u32, mut number: u32) {
